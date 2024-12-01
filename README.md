@@ -4,7 +4,7 @@ Renz Ben Jeryk Dy
 
 ---
 
-> This API enables users to register, authenticate, and manage books and authors in a database. It supports essential CRUD operations for books and authors.  
+This API enables users to register, authenticate, and manage books and authors in a database. It supports essential CRUD operations for books and authors.  
 
 ---
 
@@ -20,60 +20,102 @@ Renz Ben Jeryk Dy
 
 ---
 
-### Endpoint Payloads
+# Endpoint Payloads
 
 --- 
 
-1. REGISTER
+### REGISTER
+
+___
+
+
 Method: POST
 Endpoint:dy_library/public/user/register
+
 {
     "username": "jeryk",
     "password": "123"
 }
 
-2. AUTHENTICATE
+___
+
+### AUTHENTICATE
+
+___
+
+
 Method: POST
 Endpoint:dy_library/public/user/authenticate
+
 {
     "username": "jeryk",
     "password": "123"
 }
 
-3. INSERT
+___
+
+### INSERT
+
+___
+
 Method: POST
 Endpoint:dy_library/public/book-author/insert
+
 {
     "bookTitle": "Sentinels",
     "authorName": "valorant"
 }
 
-4. BOOK UPDATE
+___
+
+### BOOK UPDATE
+
+___
+
 Method: PUT
 dy_library/public/book/update
+
 {
     "bookid": 1,
     "newTitle": "Wuthering Waves"
 }
 
-5. AUTHOR UPDATE
+___
+
+### AUTHOR UPDATE
+
+___
+
 Method: PUT
 Endpoint:dy_library/public/author/update
+
 {
     "authorid": 5,
     "newName": "KuroKuro"
 }
 
-6. AUTHOR DELETE
+___
+
+### AUTHOR DELETE
+
+___
+
 Method: DELETE
 Endpoint:dy_library/public/author/delete
+
 {
     "authorid": 10
 }
 
-7. BOOK DELETE
+___
+
+### BOOK DELETE
+
+___
+
 Method: DELETE
 Endpoint:dy_library/public/book/delete
+
 {
     "bookid": 6
 }
