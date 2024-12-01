@@ -9,10 +9,14 @@ This API enables users to register, authenticate, and manage books and authors i
 ---
 
 ## Features  
-- **User Registration and Authentication**: Securely register and authenticate users to access the system.  
-- **Insert new books and authors**: Add new books and their respective authors to the database.  
-- **Update book titles and author names**: Modify existing book titles or author names in the database.  
-- **Delete books and authors**: Remove unwanted books or authors from the system.  
+- **User Registration and Authentication**: 
+    - Securely register and authenticate users to access the system.  
+- **Insert new books and authors**: 
+    - Add new books and their respective authors to the database.  
+- **Update book titles and author names**: 
+    - Modify existing book titles or author names in the database.  
+- **Delete books and authors**: 
+    - Remove unwanted books or authors from the system.  
 
 ---
 
@@ -29,7 +33,7 @@ This API enables users to register, authenticate, and manage books and authors i
 
 Method: POST
 
-Endpoint:dy_library/public/user/register
+Endpoint: dy_library/public/user/register
 
 ```
 {
@@ -45,12 +49,12 @@ ___
 
 Method: POST
 
-Endpoint:dy_library/public/user/authenticate
+Endpoint: dy_library/public/user/authenticate
 
 ```
 {
-    "username": "jeryk",
-    "password": "123"
+    "username": "admin",
+    "password": "admin123"
 }
 ```
 
@@ -61,12 +65,12 @@ ___
 
 Method: POST
 
-Endpoint:dy_library/public/book-author/insert
+Endpoint: dy_library/public/book-author/insert
 
 ```
 {
-    "bookTitle": "Sentinels",
-    "authorName": "valorant"
+    "bookTitle": "Title of the Book",
+    "authorName": "Author Name"
 }
 ```
 
@@ -77,12 +81,12 @@ ___
 
 Method: PUT
 
-dy_library/public/book/update
+Endpoint: dy_library/public/book/update
 
 ```
 {
     "bookid": 1,
-    "newTitle": "Wuthering Waves"
+    "newTitle": "New Title of the Book"
 }
 ```
 
@@ -93,12 +97,12 @@ ___
 
 Method: PUT
 
-Endpoint:dy_library/public/author/update
+Endpoint: dy_library/public/author/update
 
 ```
 {
-    "authorid": 5,
-    "newName": "KuroKuro"
+    "authorid": 1,
+    "newName": "New Author Name"
 }
 ```
 
@@ -109,11 +113,11 @@ ___
 
 Method: DELETE
 
-Endpoint:dy_library/public/author/delete
+Endpoint: dy_library/public/author/delete
 
 ```
 {
-    "authorid": 10
+    "authorid": 1
 }
 ```
 
@@ -124,13 +128,15 @@ ___
 
 Method: DELETE
 
-Endpoint:dy_library/public/book/delete
+Endpoint: dy_library/public/book/delete
 
 ```
 {
-    "bookid": 6
+    "bookid": 1
 }
 ```
+
+___
 
  
 
